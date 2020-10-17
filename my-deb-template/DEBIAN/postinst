@@ -1,2 +1,0 @@
-sudo systemctl enable robot
-sudo systemctl start robot
