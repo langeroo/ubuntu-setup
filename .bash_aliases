@@ -19,3 +19,8 @@ alias sdsb='source devel/setup.bash'
 alias rtl='rostopic list'
 alias tf='rosrun rqt_tf_tree rqt_tf_tree'
 
+#usage: rosremote <ip address of remote master>
+rosremote() {
+    export ROS_MASTER_URI=http://$1:11311
+    export ROS_IP=$1
+}
